@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD9EB5241885C85000CC1F8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9EB5231885C85000CC1F8E /* Foundation.framework */; };
+		AD9EB5261885C85000CC1F8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9EB5251885C85000CC1F8E /* CoreGraphics.framework */; };
+		AD9EB5281885C85000CC1F8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9EB5271885C85000CC1F8E /* UIKit.framework */; };
+		AD9EB52E1885C85000CC1F8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB52C1885C85000CC1F8E /* InfoPlist.strings */; };
+		AD9EB5301885C85000CC1F8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EB52F1885C85000CC1F8E /* main.m */; };
+		AD9EB5341885C85000CC1F8E /* ICAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EB5331885C85000CC1F8E /* ICAAppDelegate.m */; };
+		AD9EB5371885C85000CC1F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB5351885C85000CC1F8E /* Main.storyboard */; };
+		AD9EB53A1885C85000CC1F8E /* ICAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EB5391885C85000CC1F8E /* ICAViewController.m */; };
+		AD9EB53C1885C85000CC1F8E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB53B1885C85000CC1F8E /* Images.xcassets */; };
+		AD9EB5431885C85100CC1F8E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9EB5421885C85100CC1F8E /* XCTest.framework */; };
+		AD9EB5441885C85100CC1F8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9EB5231885C85000CC1F8E /* Foundation.framework */; };
+		AD9EB5451885C85100CC1F8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9EB5271885C85000CC1F8E /* UIKit.framework */; };
+		AD9EB54D1885C85100CC1F8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB54B1885C85100CC1F8E /* InfoPlist.strings */; };
+		AD9EB54F1885C85100CC1F8E /* ImageLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EB54E1885C85100CC1F8E /* ImageLayerTests.m */; };
+		AD9EB55A1885CA4C00CC1F8E /* Snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB5581885CA4C00CC1F8E /* Snowman.png */; };
+		AD9EB55B1885CA4C00CC1F8E /* Snowman@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB5591885CA4C00CC1F8E /* Snowman@2x.png */; };
+		AD9EB55E1885CDBF00CC1F8E /* Sprites.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB55C1885CDBF00CC1F8E /* Sprites.png */; };
+		AD9EB55F1885CDBF00CC1F8E /* Sprites@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9EB55D1885CDBF00CC1F8E /* Sprites@2x.png */; };
+		AD9EB5631885CE1D00CC1F8E /* ICASpriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9EB5611885CE1D00CC1F8E /* ICASpriteViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD9EB5461885C85100CC1F8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD9EB5181885C85000CC1F8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD9EB51F1885C85000CC1F8E;
+			remoteInfo = ImageLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD9EB5201885C85000CC1F8E /* ImageLayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageLayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9EB5231885C85000CC1F8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD9EB5251885C85000CC1F8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD9EB5271885C85000CC1F8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD9EB52B1885C85000CC1F8E /* ImageLayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageLayer-Info.plist"; sourceTree = "<group>"; };
+		AD9EB52D1885C85000CC1F8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD9EB52F1885C85000CC1F8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD9EB5311885C85000CC1F8E /* ImageLayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageLayer-Prefix.pch"; sourceTree = "<group>"; };
+		AD9EB5321885C85000CC1F8E /* ICAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICAAppDelegate.h; sourceTree = "<group>"; };
+		AD9EB5331885C85000CC1F8E /* ICAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICAAppDelegate.m; sourceTree = "<group>"; };
+		AD9EB5361885C85000CC1F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD9EB5381885C85000CC1F8E /* ICAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICAViewController.h; sourceTree = "<group>"; };
+		AD9EB5391885C85000CC1F8E /* ICAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICAViewController.m; sourceTree = "<group>"; };
+		AD9EB53B1885C85000CC1F8E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD9EB5411885C85100CC1F8E /* ImageLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9EB5421885C85100CC1F8E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD9EB54A1885C85100CC1F8E /* ImageLayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageLayerTests-Info.plist"; sourceTree = "<group>"; };
+		AD9EB54C1885C85100CC1F8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD9EB54E1885C85100CC1F8E /* ImageLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageLayerTests.m; sourceTree = "<group>"; };
+		AD9EB5581885CA4C00CC1F8E /* Snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Snowman.png; path = ImageLayer/Snowman.png; sourceTree = "<group>"; };
+		AD9EB5591885CA4C00CC1F8E /* Snowman@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Snowman@2x.png"; path = "ImageLayer/Snowman@2x.png"; sourceTree = "<group>"; };
+		AD9EB55C1885CDBF00CC1F8E /* Sprites.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sprites.png; path = ImageLayer/Sprites.png; sourceTree = "<group>"; };
+		AD9EB55D1885CDBF00CC1F8E /* Sprites@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sprites@2x.png"; path = "ImageLayer/Sprites@2x.png"; sourceTree = "<group>"; };
+		AD9EB5601885CE1D00CC1F8E /* ICASpriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICASpriteViewController.h; sourceTree = "<group>"; };
+		AD9EB5611885CE1D00CC1F8E /* ICASpriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICASpriteViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD9EB51D1885C85000CC1F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9EB5261885C85000CC1F8E /* CoreGraphics.framework in Frameworks */,
+				AD9EB5281885C85000CC1F8E /* UIKit.framework in Frameworks */,
+				AD9EB5241885C85000CC1F8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9EB53E1885C85100CC1F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9EB5431885C85100CC1F8E /* XCTest.framework in Frameworks */,
+				AD9EB5451885C85100CC1F8E /* UIKit.framework in Frameworks */,
+				AD9EB5441885C85100CC1F8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD9EB5171885C85000CC1F8E = {
+			isa = PBXGroup;
+			children = (
+				AD9EB55C1885CDBF00CC1F8E /* Sprites.png */,
+				AD9EB55D1885CDBF00CC1F8E /* Sprites@2x.png */,
+				AD9EB5581885CA4C00CC1F8E /* Snowman.png */,
+				AD9EB5591885CA4C00CC1F8E /* Snowman@2x.png */,
+				AD9EB5291885C85000CC1F8E /* ImageLayer */,
+				AD9EB5481885C85100CC1F8E /* ImageLayerTests */,
+				AD9EB5221885C85000CC1F8E /* Frameworks */,
+				AD9EB5211885C85000CC1F8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD9EB5211885C85000CC1F8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EB5201885C85000CC1F8E /* ImageLayer.app */,
+				AD9EB5411885C85100CC1F8E /* ImageLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD9EB5221885C85000CC1F8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EB5231885C85000CC1F8E /* Foundation.framework */,
+				AD9EB5251885C85000CC1F8E /* CoreGraphics.framework */,
+				AD9EB5271885C85000CC1F8E /* UIKit.framework */,
+				AD9EB5421885C85100CC1F8E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD9EB5291885C85000CC1F8E /* ImageLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EB5321885C85000CC1F8E /* ICAAppDelegate.h */,
+				AD9EB5331885C85000CC1F8E /* ICAAppDelegate.m */,
+				AD9EB5351885C85000CC1F8E /* Main.storyboard */,
+				AD9EB5601885CE1D00CC1F8E /* ICASpriteViewController.h */,
+				AD9EB5611885CE1D00CC1F8E /* ICASpriteViewController.m */,
+				AD9EB5381885C85000CC1F8E /* ICAViewController.h */,
+				AD9EB5391885C85000CC1F8E /* ICAViewController.m */,
+				AD9EB53B1885C85000CC1F8E /* Images.xcassets */,
+				AD9EB52A1885C85000CC1F8E /* Supporting Files */,
+			);
+			path = ImageLayer;
+			sourceTree = "<group>";
+		};
+		AD9EB52A1885C85000CC1F8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EB52B1885C85000CC1F8E /* ImageLayer-Info.plist */,
+				AD9EB52C1885C85000CC1F8E /* InfoPlist.strings */,
+				AD9EB52F1885C85000CC1F8E /* main.m */,
+				AD9EB5311885C85000CC1F8E /* ImageLayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD9EB5481885C85100CC1F8E /* ImageLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EB54E1885C85100CC1F8E /* ImageLayerTests.m */,
+				AD9EB5491885C85100CC1F8E /* Supporting Files */,
+			);
+			path = ImageLayerTests;
+			sourceTree = "<group>";
+		};
+		AD9EB5491885C85100CC1F8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD9EB54A1885C85100CC1F8E /* ImageLayerTests-Info.plist */,
+				AD9EB54B1885C85100CC1F8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD9EB51F1885C85000CC1F8E /* ImageLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9EB5521885C85100CC1F8E /* Build configuration list for PBXNativeTarget "ImageLayer" */;
+			buildPhases = (
+				AD9EB51C1885C85000CC1F8E /* Sources */,
+				AD9EB51D1885C85000CC1F8E /* Frameworks */,
+				AD9EB51E1885C85000CC1F8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageLayer;
+			productName = ImageLayer;
+			productReference = AD9EB5201885C85000CC1F8E /* ImageLayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD9EB5401885C85100CC1F8E /* ImageLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD9EB5551885C85100CC1F8E /* Build configuration list for PBXNativeTarget "ImageLayerTests" */;
+			buildPhases = (
+				AD9EB53D1885C85100CC1F8E /* Sources */,
+				AD9EB53E1885C85100CC1F8E /* Frameworks */,
+				AD9EB53F1885C85100CC1F8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD9EB5471885C85100CC1F8E /* PBXTargetDependency */,
+			);
+			name = ImageLayerTests;
+			productName = ImageLayerTests;
+			productReference = AD9EB5411885C85100CC1F8E /* ImageLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD9EB5181885C85000CC1F8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ICA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Peter Bødskov";
+				TargetAttributes = {
+					AD9EB5401885C85100CC1F8E = {
+						TestTargetID = AD9EB51F1885C85000CC1F8E;
+					};
+				};
+			};
+			buildConfigurationList = AD9EB51B1885C85000CC1F8E /* Build configuration list for PBXProject "ImageLayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD9EB5171885C85000CC1F8E;
+			productRefGroup = AD9EB5211885C85000CC1F8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD9EB51F1885C85000CC1F8E /* ImageLayer */,
+				AD9EB5401885C85100CC1F8E /* ImageLayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD9EB51E1885C85000CC1F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9EB55E1885CDBF00CC1F8E /* Sprites.png in Resources */,
+				AD9EB53C1885C85000CC1F8E /* Images.xcassets in Resources */,
+				AD9EB55A1885CA4C00CC1F8E /* Snowman.png in Resources */,
+				AD9EB52E1885C85000CC1F8E /* InfoPlist.strings in Resources */,
+				AD9EB55B1885CA4C00CC1F8E /* Snowman@2x.png in Resources */,
+				AD9EB5371885C85000CC1F8E /* Main.storyboard in Resources */,
+				AD9EB55F1885CDBF00CC1F8E /* Sprites@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9EB53F1885C85100CC1F8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9EB54D1885C85100CC1F8E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD9EB51C1885C85000CC1F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9EB5341885C85000CC1F8E /* ICAAppDelegate.m in Sources */,
+				AD9EB53A1885C85000CC1F8E /* ICAViewController.m in Sources */,
+				AD9EB5301885C85000CC1F8E /* main.m in Sources */,
+				AD9EB5631885CE1D00CC1F8E /* ICASpriteViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9EB53D1885C85100CC1F8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9EB54F1885C85100CC1F8E /* ImageLayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD9EB5471885C85100CC1F8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD9EB51F1885C85000CC1F8E /* ImageLayer */;
+			targetProxy = AD9EB5461885C85100CC1F8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD9EB52C1885C85000CC1F8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9EB52D1885C85000CC1F8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD9EB5351885C85000CC1F8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9EB5361885C85000CC1F8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD9EB54B1885C85100CC1F8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD9EB54C1885C85100CC1F8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD9EB5501885C85100CC1F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD9EB5511885C85100CC1F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD9EB5531885C85100CC1F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageLayer/ImageLayer-Prefix.pch";
+				INFOPLIST_FILE = "ImageLayer/ImageLayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AD9EB5541885C85100CC1F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageLayer/ImageLayer-Prefix.pch";
+				INFOPLIST_FILE = "ImageLayer/ImageLayer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD9EB5561885C85100CC1F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImageLayer.app/ImageLayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageLayer/ImageLayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ImageLayerTests/ImageLayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD9EB5571885C85100CC1F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImageLayer.app/ImageLayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageLayer/ImageLayer-Prefix.pch";
+				INFOPLIST_FILE = "ImageLayerTests/ImageLayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD9EB51B1885C85000CC1F8E /* Build configuration list for PBXProject "ImageLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9EB5501885C85100CC1F8E /* Debug */,
+				AD9EB5511885C85100CC1F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD9EB5521885C85100CC1F8E /* Build configuration list for PBXNativeTarget "ImageLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9EB5531885C85100CC1F8E /* Debug */,
+				AD9EB5541885C85100CC1F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD9EB5551885C85100CC1F8E /* Build configuration list for PBXNativeTarget "ImageLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD9EB5561885C85100CC1F8E /* Debug */,
+				AD9EB5571885C85100CC1F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD9EB5181885C85000CC1F8E /* Project object */;
+}
