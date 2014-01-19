@@ -404,6 +404,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageLayer/ImageLayer-Prefix.pch";
 				INFOPLIST_FILE = "ImageLayer/ImageLayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -417,6 +418,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageLayer/ImageLayer-Prefix.pch";
 				INFOPLIST_FILE = "ImageLayer/ImageLayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -483,6 +485,7 @@
 				AD9EB5541885C85100CC1F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD9EB5551885C85100CC1F8E /* Build configuration list for PBXNativeTarget "ImageLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +494,7 @@
 				AD9EB5571885C85100CC1F8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
