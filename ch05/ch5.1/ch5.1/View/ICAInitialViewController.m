@@ -8,8 +8,9 @@
 
 #import "ICAInitialViewController.h"
 
-#define RADIANS_TO_DEGREES(x) ((x)/M_PI*180.0) 
+#define RADIANS_TO_DEGREES(x) ((x)/M_PI*180.0)
 #define DEGREES_TO_RADIANS(x) ((x)/180.0*M_PI)
+
 
 @interface ICAInitialViewController ()
 
@@ -31,6 +32,22 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    UIImage *snowman = [UIImage imageNamed:@"snowman"];
+    self.layerView.layer.contents = (__bridge id)(snowman.CGImage);
+    
+    /*
+    CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI_4);
+    transform = CGAffineTransformScale(transform, 0.5, 0.5);
+    self.layerView.layer.affineTransform = transform;
+    */
+    
+    CATransform3D transform = CATransform3DIdentity;
+    
+    //perspective
+    transform.m34 = - 1.0 / 500;
+    transform = CATransform3DRotate(transform, M_PI_4, 0.0, 1.0, 0.0);
+    self.layerView.layer.transform = transform;
+    
 }
 
 - (void)didReceiveMemoryWarning
