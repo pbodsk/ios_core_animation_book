@@ -31,6 +31,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = self.containerView.bounds;
+    gradientLayer.colors = @[(__bridge id)[UIColor greenColor].CGColor, (__bridge id)[UIColor redColor].CGColor];
+    gradientLayer.startPoint = CGPointMake(0.0, 0.0);
+    gradientLayer.endPoint = CGPointMake(1.0, 0.0);
+    [self.containerView.layer addSublayer:gradientLayer];
 }
 
 - (void)didReceiveMemoryWarning
