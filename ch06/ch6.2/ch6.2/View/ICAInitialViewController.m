@@ -11,7 +11,9 @@
 #define RADIANS_TO_DEGREES(x) ((x)/M_PI*180.0) 
 #define DEGREES_TO_RADIANS(x) ((x)/180.0*M_PI)
 
-@interface ICAInitialViewController ()
+@interface ICAInitialViewController () {
+    CALayer *layer;
+}
 
 @end
 
@@ -57,20 +59,47 @@
     replicator.instanceCount = 10;
     
     CATransform3D transform = CATransform3DIdentity;
-    transform = CATransform3DTranslate(transform, 0, 200, 0);
-    transform = CATransform3DRotate(transform, M_PI / 5.0, 0, 0, 1);
-    transform = CATransform3DTranslate(transform, 0, -200, 0);
+    transform = CATransform3DTranslate(transform, 50, 0, 0);
+//    transform = CATransform3DRotate(transform, M_PI / 5.0, 0, 0, 1);
     replicator.instanceTransform = transform;
     
     replicator.instanceBlueOffset = -0.1;
     replicator.instanceRedOffset = -0.15;
     replicator.instanceGreenOffset = -0.2;
     
-    CALayer *layer = [CALayer layer];
-    layer.frame = CGRectMake(10.0, 10.0, 100.0, 100.0);
-    layer.backgroundColor = [UIColor whiteColor].CGColor;
+    replicator.instanceDelay = 0.15;
+    
+    layer = [CALayer layer];
+    layer.frame = CGRectMake(10.0, 10.0, 25.0, 25.0);
+//    layer.opacity = 0.0;
+    
+    layer.backgroundColor = [UIColor greenColor].CGColor;
     [replicator addSublayer:layer];
     
+    CAReplicatorLayer *replicator2 = [CAReplicatorLayer layer];
+    replicator2.frame = replicator.frame;
+    [self.containerView.layer addSublayer:replicator2];
+
+    
+    replicator2.instanceCount = 5;
+    CATransform3D transform2 = CATransform3DIdentity;
+    transform2 = CATransform3DTranslate(transform2, 0.0, 50.0, 0.0);
+    replicator2.instanceTransform = transform2;
+    replicator2.instanceDelay = 0.40;
+    [replicator2 addSublayer:replicator];
+   
+    /*
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"opacity";
+    animation.toValue = [NSNumber numberWithInt:100];
+    animation.duration = 1.0;
+    animation.delegate = self;
+    [layer addAnimation:animation forKey:@"animation"];
+     */
+}
+
+-(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    layer.opacity = 100;
 }
 
 - (void)didReceiveMemoryWarning
